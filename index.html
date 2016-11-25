@@ -1,0 +1,39 @@
+<!doctype html><html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<title></title>
+<link rel="stylesheet" href="css/public.css">
+
+</head>
+<body>
+<div class="myinfo" >
+    <ul class="myinfo-ul" id="js-myinfo-ul">
+        <li class="list">
+            <span class="name">QQ号码：</span>
+            <input type="text" class="input js-input" pattern='[0-9]*' data-pattern="/^[0-9]{5,11}$/" data-personinfo="QQ" />
+        </li>
+        <li class="list">
+            <span class="name">电话号码：</span>
+            <input type="text" class="input js-input" data-personinfo="tel" pattern="[0-9]*" data-pattern="/^[0-9]{11}$/"/>
+        </li>
+        <li class="list">
+            <span class="name">邮寄地址：</span>
+            <input type="text" class="input js-input" data-personinfo="address"/>
+        </li>
+        <li class="list">
+            <span class="name">姓名：</span>
+            <input type="text" class="input js-input" data-personinfo="name"/>
+        </li>
+    </ul>
+    <div class="u-buttonbox">
+        <a href="#" class="u-main-button" data-formid="#js-myinfo-ul" id="js-personinfo-submit">确认</a>
+    </div>
+</div>
+
+
+<script src="javascripts/LinCheckInfo.js"></script>
+
+
+
+</body>
+</html>
